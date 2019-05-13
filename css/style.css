@@ -26206,7 +26206,7 @@ input[type="submit"] {
 @font-face {
   font-family: 'icomoon';
   src: url('/_ui/dist/fonts/customIcons/fonts/icomoon.eot?h3s8sn');
-  src: url('/_ui/dist/fonts/customIcons/fonts/icomoon.eot?h3s8sn#iefix') format('embedded-opentype'), url('/_ui/dist/fonts/customIcons/fonts/icomoon.ttf?h3s8sn') format('truetype'), url('/_ui/dist/fonts/customIcons/fonts/icomoon.woff?h3s8sn') format('woff'), url('/_ui/dist/fonts/customIcons/fonts/icomoon.svg?h3s8sn#icomoon') format('svg');
+  src: url('/_ui/dist/fonts/customIcons/fonts/icomoon.eot?h3s8sn#iefix') format('embedded-opentype'), url('/_ui/dist/fonts/customIcons/fonts/icomoon.ttf') format('truetype'), url('/fonts-icons/icomoon.woff') format('woff'), url('/_ui/dist/fonts/customIcons/fonts/icomoon.svg?h3s8sn#icomoon') format('svg');
   font-weight: normal;
   font-style: normal
 }
@@ -30124,7 +30124,7 @@ html.modalOakley_opened {
 }
 
 #global-header-dropdown .logo a .oakley-logo {
-  background: url(/_ui/dist/images/oakley-logo.svg) no-repeat left center;
+  background: url(/images/icons/oakley-logo.svg) no-repeat left center;
   height: 20px;
   width: 60px;
   display: block;
