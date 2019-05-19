@@ -2,6 +2,14 @@
   display: none
 }
 
+/* start */
+
+.margin-botton-prescription-option {
+  margin-bottom: 0;
+}
+
+/* end */
+
 .ui-helper-hidden-accessible {
   border: 0;
   clip: rect(0 0 0 0);
