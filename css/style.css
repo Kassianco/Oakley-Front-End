@@ -30457,6 +30457,16 @@ html.modalOakley_opened {
   transform: rotate(180deg)
 }
 
+.custom-logo-section {
+  width: 50px;
+  padding-top: 10px;
+}
+
+.custom-logo {
+  width: 25px;
+  padding-top: 0;
+}
+
 #global-header-dropdown .nav-links .category .category-link {
   position: relative;
   display: block;
