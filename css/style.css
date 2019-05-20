@@ -32246,7 +32246,8 @@ html.modalOakley_opened {
   display: block;
   height: 50px;
   border-bottom: 1px solid #979797;
-  background: #f7f7f7
+  background: #f7f7f7;
+  font-size:18px;
 }
 
 @media (min-width: 992px) {
