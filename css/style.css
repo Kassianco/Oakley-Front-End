@@ -9371,7 +9371,7 @@ html .feedback-messages {
 
 .module-searchbox .search-box-text .search-text {
   z-index: 5;
-  color: #222;
+  color: rgb(210, 54, 54);
   text-transform: none
 }
 
@@ -29303,10 +29303,13 @@ html.modalOakley_opened {
       display: none
   }
   #global-header-dropdown div.search-bar.srev:not(.expand) .search-submit-btn {
-      position: relative;
-      right: 44px;
-      height: 42px;
-      width: 44px
+    position: relative;
+    right: 204px;
+    height: 42px;
+    width: 204px;
+    background-color: white;
+    color: black;
+    padding: 0 10px;
   }
   #global-header-dropdown div.search-bar.srev.expand {
       background-color: #f7f7f7
@@ -30468,6 +30471,7 @@ html.modalOakley_opened {
 .custom-logo-section {
   width: 50px;
   padding-top: 10px;
+  z-index: 13;
 }
 
 .custom-logo {
@@ -31681,7 +31685,7 @@ html.modalOakley_opened {
   .navigation-menu.open-menu .area1 .sport-item:not(: nth-child(n+7)) {
       float: left;
       display: block;
-      width: 15%
+      width: 15%;
   }
 }
 
@@ -45451,7 +45455,7 @@ div.customize-product-container {
   margin-top: 35px;
   color: #dbdbdb;
   font-family: "ScoutCond", sans-serif;
-  font: size: 16px;
+  font-size: 16px;
   text-align: center;
   text-decoration: none;
   -moz-transition: all .3s ease-in;
@@ -45472,7 +45476,7 @@ div.customize-product-container {
   position: relative;
   top: -1px;
   margin-left: 6px;
-  font-family: "OakleyIcons", sans-serif
+  font-family: "OakleyIcons", sans-serif;
 }
 
 @media (max-width: 767px) {
@@ -58216,7 +58220,7 @@ label.checkbox.selected:before {
       margin: 11px 0 0 0;
       padding: 7px 0;
       width: 95%;
-      height: 43px
+      height: 70px
   }
   .fis-container .store-list-container {
       width: 47%
