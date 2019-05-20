@@ -31674,7 +31674,8 @@ html.modalOakley_opened {
 }
 
 .navigation-menu.open-menu .area1 .sport-item:not(:nth-child(n+7)) {
-  float: none
+  /* float: none */
+  float: left
 }
 
 @media (min-width: 992px) {
