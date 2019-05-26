@@ -29309,7 +29309,7 @@ html.modalOakley_opened {
     width: 204px;
     background-color: white;
     color: black;
-    padding: 0 10px;
+    padding: 0 8px;
   }
   #global-header-dropdown div.search-bar.srev.expand {
       background-color: #f7f7f7
@@ -30456,12 +30456,18 @@ html.modalOakley_opened {
   width: auto;
   display: block;
   transition: transform .5s;
-  white-space: nowrap
+  white-space: nowrap;
+  margin: 5px;
 }
 
 #global-header-dropdown .nav-links .category {
   display: inline-block;
   height: 100%
+}
+
+#logo-custom {
+  height: 10px;
+  margin:0;
 }
 
 #global-header-dropdown .nav-links .category.active .category-link[data-dropdown-id]:after {
