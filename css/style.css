@@ -31906,6 +31906,12 @@ html.modalOakley_opened {
   }
 }
 
+@media (min-width: 992px) {
+  .custom-badge{
+    fill:"#black";
+  }
+}
+
 .navigation-menu.open-menu .area3 {
   align-items: baseline
 }
