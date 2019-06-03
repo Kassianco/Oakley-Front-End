@@ -9,6 +9,40 @@
 </head>
 <body>
 
+
+    <script>
+        var Oakley = Oakley || {};
+        //global placeholder for all the messages to be used in js files
+        Oakley.messages = Oakley.messages || {};
+        //global placeholder for all the variables to be used in js files
+        Oakley.vars = Oakley.vars || {};
+        var require = {
+            baseUrl: '/_ui/dist/scripts/'
+        };
+        var cartDataUrl = '/en-us/cart/data';
+        var cartRemoveUrl = '/en-us/cart/remove';
+        var cartText = 'Cart';
+        Oakley.buildNumber = '2019-05-22';
+        Oakley.debugMode = false;
+        Oakley.vars.originalContextPath = '/';
+        Oakley.vars.baseContext = window.location.origin + Oakley.variables.contextPath;
+        
+    
+        Oakley.region = "US".toLowerCase();
+    </script>
+    
+    <script type="text/javascript" src="/_ui/dist/bower_components/jquery/dist/jquery.min.js?v=2019-05-22"></script><script type="text/javascript" src="/_ui/dist/scripts/vendor/vendor.js?v=2019-05-22"></script><script type="text/javascript">
+      require.config({
+          urlArgs: "v=" + Oakley.buildNumber
+      });
+      require(['picturefill', 'pageCommon']);
+    </script>
+
+
+
+
+
+
   <div class="search-box-text">
       <div id="global-header-dropdown">
           <div class="button-container show-menu">
@@ -18,7 +52,7 @@
                     <span itemprop="brand" class="hidden">Oakley</span>
                 </a>
               </div>
-              <button class="menu-button" tabindex="3">
+              <button class="menu-button" tabindex="3" id="menuBTN">
                   <div class="menu-icon"></div>
               </button>
               <div class="cart-button">
@@ -784,7 +818,7 @@
               </div>
               </div>
           <div class="navigation-menu open-menu">
-              <div class="nav-container">
+              <div class="nav-container" id="navContainer">
                   <div class="nav-container-overlay">
                       <button class="menu-button" tabindex="4">
                           <div class="menu-icon"></div>
@@ -1376,7 +1410,7 @@
       
       <!-- one for each nav component... -->
         <li class="category">
-          <a href="/en-us/shop/custom" class="category-link review" data-element-id="X_X_MainNav_Custom" aria-label="main menu Custom" tabindex="106"><img id="logo-custom" src="images/icons/oakley-logo.png" alt="lcustom-logo">
+          <a href="/en-us/shop/custom" class="category-link custom-link review" data-element-id="X_X_MainNav_Custom" aria-label="main menu Custom" tabindex="106"><img id="logo-custom" src="images/icons/oakley-logo.png" alt="lcustom-logo">
                 <i class="icons-arrow-menu" style="display: none;"></i>
               </a>
             <!-- include the dropdown links here -->
@@ -1678,6 +1712,9 @@
       }
       --></style></div>
   </div>
+  
+  
+<script src="spd-menu.js"></script>
   
 </body>
 </html>
