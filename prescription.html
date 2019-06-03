@@ -36,12 +36,16 @@
 					<span class="info-text">any</span>
 				</div>
 			</div>
-			<a href="javascript:void(0)" data-element-id="X_Pdp_Prod_RoxPrescriptionTooltip" class="prescription-quick-info" aria-label="how to provide prescription tooltip" tabindex="264">
+			<!-- start -->
+			<!-- trigger -->
+			<!-- href avoids triggering the link
+			onclick calls the function -->
+			<a href="javascript:void(0)" onclick="showQuickInfoShipping()">
 				<span class="q-icon">!</span>
-				<!-- start -->
-				<span class="quick-info-text">How to provide your prescription.</span>
+				<span class="quick-info-text">How to provide your prescription</span>
 			</a>
-			<div>To process your order we will need a copy of your prescription once you have checked out.
+			<!-- hidden element -->
+			<div id="quickInfoShipping" class="quick-info-shipping">To process your order we will need a copy of your prescription once you have checked out.
 				<p>You can choose between <strong>2 options:</strong></p>
 				<p class="margin-botton-prescription-option"><span>»</span> Upload it</p>
 				<p class="margin-botton-prescription-option"><span>»</span> E-mail it</p>
@@ -50,7 +54,38 @@
 		</div>
 	</div>
 
+<script>
+	// save the extra info element in a variable 
+	var quickInfoShipping = document.getElementById('quickInfoShipping');
+	// call this function from the onclick attribute
+	function showQuickInfoShipping() {
+		// if the class name exists remove it otherwise add it
+		quickInfoShipping.classList.toggle('quick-info-shipping-expanded');
+	}
+</script>
+
+<style>
+.quick-info-shipping {
+	overflow: hidden;
+	max-height: 0;
+  transition: max-height .5s ease-out;
+}
+.quick-info-shipping-expanded {
+	max-height: 667px;
+  transition: max-height .5s ease-in;
+}
+
+/* .quick-info-shipping {
+	display: none;
+	height: 0;
+	overflow: hidden;
+}
+
+.quick-info-shipping-expanded {
+	display: block;
+	height: 200px;
+} */
+</style>
 </body>
 
 </html>
-

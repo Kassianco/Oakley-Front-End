@@ -38022,7 +38022,11 @@ body {
 
 .module-footer .footer-top-newsletter {
   overflow: hidden;
-  background-color: #222
+  background-image: url(/images/newsletter_background.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  /* background-color: #222 */
 }
 
 .module-footer .footer-top-newsletter .footer-top-separetor {
@@ -38052,6 +38056,8 @@ body {
 }
 
 .module-footer .footer-top-newsletter .footer-top-content h5 {
+  color: #f6151a;
+  font-size: 24px;
   text-align: center;
   margin: 20px 0
 }
@@ -38062,7 +38068,7 @@ body {
       font-size: 24px;
       line-height: .92;
       letter-spacing: 1.3px;
-      color: #ffffff
+      color: #f6151a
   }
 }
 
@@ -38124,6 +38130,8 @@ body {
 .module-footer .footer-top-newsletter .footer-top-content .form .form-field input:focus+button:after {
   color: #ffffff
 }
+
+/* MY-PRESCRIPTION */
 
 .module-footer .footer-top-newsletter .footer-top-content .form .form-field label {
   display: block;
