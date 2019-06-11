@@ -12,6 +12,4 @@ function toggleTheMenu() {
   navContainer.classList.toggle("show");
   
   oakleyLogo.classList.toggle('hide');
-
-  
 }
