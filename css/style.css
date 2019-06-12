@@ -29282,6 +29282,12 @@ html.modalOakley_opened {
   max-width: none
 }
 
+@media (max-width:992px) {
+  .svg-logo {
+    fill: #000;
+  }
+}
+
 @media (min-width: 992px) {
   #global-header-dropdown div.search-bar.srev {
       background-color: transparent
@@ -29289,6 +29295,7 @@ html.modalOakley_opened {
   #global-header-dropdown div.search-bar.srev.full-search-empty {
       transition: width .3s ease-in-out
   }
+
   #global-header-dropdown div.search-bar.srev input,
   #global-header-dropdown div.search-bar.srev .so-container,
   #global-header-dropdown div.search-bar.srev .o-icon-close,
