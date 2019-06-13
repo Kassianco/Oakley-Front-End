@@ -45,6 +45,13 @@ Hold Out
 <!-- text color -->$("#global-header-dropdown > div.navigation-menu.open-menu > div > ul > li.category.active > div > div > div > ul > li > div.area.area1 > div > ul > li:nth-child(6) > a > span > span").css('color', 'black');
 <!-- icon color -->$("#global-header-dropdown > div.navigation-menu.open-menu > div > ul > li.category.active > div > div > div > ul > li > div.area.area1 > div > ul > li:nth-child(6) > a > span > i").css('color', 'black');
 
+<!-- Complete Task -->
+$('#global-header-dropdown > div.navigation-menu.open-menu > div > ul > li.category.active > div').append($('#global-header-dropdown > div.navigation-menu.open-menu > div > ul > li.category.active > div > div > div > ul > li:nth-child(1) > div'));
+<!-- Women's menu -->
+$('#global-header-dropdown > div.navigation-menu.open-menu > div > ul > li.category.active > div').hide();
+<!-- Men's menu -->
+$('#global-header-dropdown > div.navigation-menu.open-menu > div > ul > li.category.active > div > div > div > ul > li:nth-child(1) > div').hide();
+
 
 <div class="area area1">
   <div class="section">
