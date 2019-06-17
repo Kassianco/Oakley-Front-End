@@ -1,19 +1,34 @@
 
-$('.search-submit-btn').css('top','-2px;!important')
+<!-- $('#global-header-dropdown > div.button-container.show-menu > div.search-bar.srev > div.search-box-background > form > div > button.search-submit-btn.icons-search').css('right':'204px')
+  
+  $('#global-header-dropdown > div.button-container.show-menu > div.search-bar.srev > div.search-box-background > form > div > button.search-submit-btn.icons-search').css('height':'42px')
+  
+  $('#global-header-dropdown > div.button-container.show-menu > div.search-bar.srev > div.search-box-background > form > div > button.search-submit-btn.icons-search').css('width':'204')
+  
+  $('#global-header-dropdown > div.button-container.show-menu > div.search-bar.srev > div.search-box-background > form > div > button.search-submit-btn.icons-search').css('background':'#fff')
+  
+  $('#global-header-dropdown > div.button-container.show-menu > div.search-bar.srev > div.search-box-background > form > div > button.search-submit-btn.icons-search').css('color':'#999')
+  
+  $('#global-header-dropdown > div.button-container.show-menu > div.search-bar.srev > div.search-box-background > form > div > button.search-submit-btn.icons-search').css('padding':'0 8px')
+  
+  $('#global-header-dropdown > div.button-container.show-menu > div.search-bar.srev > div.search-box-background > form > div > button.search-submit-btn.icons-search').css('border-radius':'0') -->
+  
+  
+  
+<!-- Text mod -->
+$('#global-header-dropdown > div.button-container.show-menu > div.search-bar.srev > div.search-box-background > form > div > button.search-submit-btn.icons-search').replaceWith('<button aria-label="search button" class="search-submit-btn icons-search" type="submit" tabindex="140"><span id="search-text" style="font-family: ScoutCond,sans-serif;text-transform:uppercase;margin-left:10px;margin-right:9px;letter-spacing:1px;">Search for sunglasses, t-shirts...</span></button><input type="text" name="text" class="search-text" value="" autocomplete="off" maxlength="70" placeholder="Search" aria-label="Search" data-placeholder="Search" data-placeholder-expand="Search Oakley products, categories or whatever you like" data-placeholder-mobile="Search for something" tabindex="141"><button aria-label="search clear button" class="o-icon-left-arrow-2 hide" tabindex="142"></button><button aria-label="search close button" class="o-icon-close" tabindex="143"></button>') 
 
-$('.search-submit-btn').css('right','204px;!important')
+<!-- CSS mod -->
+$('#global-header-dropdown > div.button-container.show-menu > div.search-bar.srev > div.search-box-background > form > div > button.search-submit-btn.icons-search').css({'top':'-2px', 'right':'204px', 'height':'44px', 'width':'204', 'background':'#fff', 'color':'#999', 'padding':'0 8px', 'border-radius':'0'})
 
-$('.search-submit-btn').css('height','42px;!important')
+<!-- Text desapear -->
+$('#global-header-dropdown > div.button-container.show-menu > div.search-bar.srev > div.search-box-background > form > div > button.search-submit-btn.icons-search').click(function(){$("#global-header-dropdown > div.button-container.show-menu > div.search-bar.srev > div.search-box-background > form > div > button.search-submit-btn.icons-search").hide();});
 
-$('.search-submit-btn').css('width','204px;!important')
+<!-- Text appear -->
+$('.o-icon-close').click(function(){$("#global-header-dropdown > div.button-container.show-menu > div.search-bar.srev > div.search-box-background > form > div > button.search-submit-btn.icons-search").show();});
 
-$('.search-submit-btn').css('background-color','#fff;!important')
 
-$('.search-submit-btn').css('color','#999;!important')
 
-$('.search-submit-btn').css('padding','0 8px;!important')
-
-$('.search-submit-btn').css('border-radius','0;!important')
 
 
 top: -2px;
