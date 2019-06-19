@@ -1,35 +1,113 @@
 <!-- html -->
-$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div.cleaner.lens-options.replacement-0-10').replaceWith('<div class="cleaner lens-options replacement-0-11"><div><h4 class="title options-single">LENS OPTIONS:</h4><span class="lens-options-single-label">Single Vision</span><div><input type="radio" name="lens-single_04-365" id="lens-single04-365" checked="" value="04-365" class="hidden" data-position="0-11" data-elem-id="X_Pdp_Prod_RoxLensTypeSelect" aria-label="select single lens code 04-365" tabindex="263"><span class="lens-options-single">Progressive lenses are not available for this product</span></div><div id="mm"><h4 class="title">PRESCRIPTION DETAILS</h4><div class="info-row"><span class="info-label">Sphere:</span><span class="info-text">2.0 to -5.0</span></div><div class="info-row"><span class="info-label">Cylinder:</span><span class="info-text">3.0 to -3.0</span></div><div class="info-row"><span class="info-label">Axes: </span><span class="info-text">any</span></div></div><a href="javascript:void(0)" onclick="showQuickInfoShipping()"><span class="q-icon">!</span><span class="quick-info-text">How to provide your prescription</span></a><div id="quickInfoShipping" class="quick-info-shipping">To process your order we will need a copy of your prescription after you have checked out.<p>You can choose between <strong>2 options:</strong></p><p class="margin-botton-prescription-option"><span>»</span> Upload it</p><p class="margin-botton-prescription-option"><span>»</span> E-mail it</p></div></div></div>');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div.cleaner.lens-options.replacement-0-10').replaceWith('<div class="cleaner lens-options replacement-0-11"><div><h4 class="title options-single">LENS OPTIONS:</h4><span class="lens-options-single-label"> Single Vision</span><div><input type="radio" name="lens-single_04-365" id="lens-single04-365" checked="" value="04-365" class="hidden" data-position="0-11" data-elem-id="X_Pdp_Prod_RoxLensTypeSelect" aria-label="select single lens code 04-365" tabindex="263"><span class="lens-options-single">Progressive lenses are not available for this product</span></div><div id="mm"><h4 class="title">PRESCRIPTION DETAILS</h4><div class="info-row"><span class="info-label">Sphere:</span><span class="info-text"> 2.0 to -5.0</span></div><div class="info-row"><span class="info-label">Cylinder:</span><span class="info-text"> 3.0 to -3.0</span></div><div class="info-row"><span class="info-label">Axes: </span><span class="info-text">any</span></div></div><a href="javascript:void(0)" onclick="showQuickInfoShipping()"><span class="q-icon">!</span><span class="quick-info-text">How to provide your prescription</span></a><div id="quickInfoShipping" class="quick-info-shipping">To process your order we will need a copy of your prescription after you have checked out.<p>You can choose between <strong>2 options:</strong></p><p class="margin-botton-prescription-option"><span>»</span> Upload it</p><p class="margin-botton-prescription-option"><span>»</span> E-mail it</p></div></div></div>');
 <!-- css -->
 $('body').prepend('<style>.quick-info-shipping {overflow: hidden;max-height: 0; transition: max-height .5s ease-out;}.quick-info-shipping-expanded {max-height: 667px; transition: max-height .5s ease-in;}</style>');
 <!-- js -->
 $('body').append('<script>var quickInfoShipping = document.getElementById("quickInfoShipping");function showQuickInfoShipping() { quickInfoShipping.classList.toggle("quick-info-shipping-expanded");}</script>');
-
-<!-- Details content margin -->
-$('#mm').css('margin-bottom', '8px');
-<!-- How text underline -->
+<!-- Details -->
+$('#mm').css('margin', '12px 0');
+<!-- Sphere -->
+$('#mm > div:nth-child(2)').css('font-size', '13px');
+$('#mm > div:nth-child(2)').css('margin-top', '5px');
+$('#mm > div:nth-child(2) > span.info-label').css('font-weight', '600');
+$('#mm > div:nth-child(2) > span.info-label').css('color', '#026796');
+$('#mm > div:nth-child(2) > span.info-text').css('color', '#39393a');
+<!-- Cylinder -->
+$('#mm > div:nth-child(3)').css('font-size', '13px');
+$('#mm > div:nth-child(3)').css('margin-top', '5px');
+$('#mm > div:nth-child(3) > span.info-label').css('font-weight', '600');
+$('#mm > div:nth-child(3) > span.info-label').css('color', '#026796');
+$('#mm > div:nth-child(3) > span.info-text').css('color', '#39393a');
+<!-- Axes -->
+$('#mm > div:nth-child(4)').css('font-size', '13px');
+$('#mm > div:nth-child(4)').css('margin-top', '5px');
+$('#mm > div:nth-child(4) > span.info-label').css('font-weight', '600');
+$('#mm > div:nth-child(4) > span.info-label').css('color', '#026796');
+$('#mm > div:nth-child(4) > span.info-text').css('color', '#39393a');
+<!-- How -->
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a').css('color', '#026796');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a').css('font-size', '12px');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a').css('opacity', '.7');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a').css('display', 'block');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a').css('margin-top', '12px');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a').css('font-weight', '400');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a').css('margin-bottom', '8px');
+<!-- How icon -->
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a > span.q-icon').css('width', '13px');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a > span.q-icon').css('height', '13px');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a > span.q-icon').css('background', '#026796');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a > span.q-icon').css('color', '#fff');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a > span.q-icon').css('display', 'block');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a > span.q-icon').css('float', 'left');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a > span.q-icon').css('margin-right', '5px');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a > span.q-icon').css('margin-top', '2px');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a > span.q-icon').css('text-align', 'center');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a > span.q-icon').css('font-size', '10px');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a > span.q-icon').css('line-height', '13px');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a > span.q-icon').css('font-weight', '800');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a > span.q-icon').css('border-radius', '50%');
+<!-- How text -->
 $('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a > span.quick-info-text').css('text-decoration', 'underline');
-<!-- How text uppercase -->
-$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a > span.quick-info-text').css('text-transform', 'uppercase');
-<!-- How text size -->
-$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a > span.quick-info-text').css('text-size', '12px');
-<!-- How text weight -->
-$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a > span.quick-info-text').css('font-weight', '600');
-<!-- Option text margin -->
-$('#quickInfoShipping > p:nth-child(1)').css('margin-bottom', '8px');
-<!-- Upload text margin -->
-$('#quickInfoShipping > p:nth-child(2)').css('margin-bottom', '0');
-<!-- Email text margin -->
-$('#quickInfoShipping > p:nth-child(3)').css('margin-bottom', '0');
+<!-- Info -->
+$('#quickInfoShipping').css('font-size', '13px');
+$('#quickInfoShipping').css('font-weight', '500');
+$('#quickInfoShipping').css('color', '#202020');
+<!-- Upload -->
+$('#quickInfoShipping > p:nth-child(2)').css('font-weight', '600');
+$('#quickInfoShipping > p:nth-child(2)').css('color', '#026796');
+<!-- Email -->
+$('#quickInfoShipping > p:nth-child(3)').css('font-weight', '600');
+$('#quickInfoShipping > p:nth-child(3)').css('color', '#026796');
+$('#quickInfoShipping > p:nth-child(3)').css('margin-bottom', '4px');
 
-$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div.cleaner.lens-options.replacement-0-10').replaceWith('<div class="cleaner lens-options replacement-0-11"><div><h4 class="title options-single">LENS OPTIONS:</h4><span class="lens-options-single-label">Single Vision</span><div><input type="radio" name="lens-single_04-365" id="lens-single04-365" checked="" value="04-365" class="hidden" data-position="0-11" data-elem-id="X_Pdp_Prod_RoxLensTypeSelect" aria-label="select single lens code 04-365" tabindex="263"><span class="lens-options-single">Progressive lenses are not available for this product</span></div><div id="mm"><h4 class="title">PRESCRIPTION DETAILS</h4><div class="info-row"><span class="info-label">Sphere:</span><span class="info-text">2.0 to -5.0</span></div><div class="info-row"><span class="info-label">Cylinder:</span><span class="info-text">3.0 to -3.0</span></div><div class="info-row"><span class="info-label">Axes: </span><span class="info-text">any</span></div></div><a href="javascript:void(0)" onclick="showQuickInfoShipping()"><span class="q-icon">!</span><span class="quick-info-text">How to provide your prescription</span></a><div id="quickInfoShipping" class="quick-info-shipping">To process your order we will need a copy of your prescription after you have checked out.<p>You can choose between <strong>2 options:</strong></p><p class="margin-botton-prescription-option"><span>»</span> Upload it</p><p class="margin-botton-prescription-option"><span>»</span> E-mail it</p></div></div></div>');
+
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div.cleaner.lens-options.replacement-0-10').replaceWith('<div class="cleaner lens-options replacement-0-11"><div><h4 class="title options-single">LENS OPTIONS:</h4><span class="lens-options-single-label"> Single Vision</span><div><input type="radio" name="lens-single_04-365" id="lens-single04-365" checked="" value="04-365" class="hidden" data-position="0-11" data-elem-id="X_Pdp_Prod_RoxLensTypeSelect" aria-label="select single lens code 04-365" tabindex="263"><span class="lens-options-single">Progressive lenses are not available for this product</span></div><div id="mm"><h4 class="title">PRESCRIPTION DETAILS</h4><div class="info-row"><span class="info-label">Sphere:</span><span class="info-text"> 2.0 to -5.0</span></div><div class="info-row"><span class="info-label">Cylinder:</span><span class="info-text"> 3.0 to -3.0</span></div><div class="info-row"><span class="info-label">Axes: </span><span class="info-text">any</span></div></div><a href="javascript:void(0)" onclick="showQuickInfoShipping()"><span class="q-icon">!</span><span class="quick-info-text">How to provide your prescription</span></a><div id="quickInfoShipping" class="quick-info-shipping">To process your order we will need a copy of your prescription after you have checked out.<p>You can choose between <strong>2 options:</strong></p><p class="margin-botton-prescription-option"><span>»</span> Upload it</p><p class="margin-botton-prescription-option"><span>»</span> E-mail it</p></div></div></div>');
 $('body').prepend('<style>.quick-info-shipping {overflow: hidden;max-height: 0; transition: max-height .5s ease-out;}.quick-info-shipping-expanded {max-height: 667px; transition: max-height .5s ease-in;}</style>');
 $('body').append('<script>var quickInfoShipping = document.getElementById("quickInfoShipping");function showQuickInfoShipping() { quickInfoShipping.classList.toggle("quick-info-shipping-expanded");}</script>');
-$('#mm').css('margin-bottom', '8px');
+$('#mm').css('margin', '12px 0');
+$('#mm > div:nth-child(2)').css('font-size', '13px');
+$('#mm > div:nth-child(2)').css('margin-top', '5px');
+$('#mm > div:nth-child(2) > span.info-label').css('font-weight', '600');
+$('#mm > div:nth-child(2) > span.info-label').css('color', '#026796');
+$('#mm > div:nth-child(2) > span.info-text').css('color', '#39393a');
+$('#mm > div:nth-child(3)').css('font-size', '13px');
+$('#mm > div:nth-child(3)').css('margin-top', '5px');
+$('#mm > div:nth-child(3) > span.info-label').css('font-weight', '600');
+$('#mm > div:nth-child(3) > span.info-label').css('color', '#026796');
+$('#mm > div:nth-child(3) > span.info-text').css('color', '#39393a');
+$('#mm > div:nth-child(4)').css('font-size', '13px');
+$('#mm > div:nth-child(4)').css('margin-top', '5px');
+$('#mm > div:nth-child(4) > span.info-label').css('font-weight', '600');
+$('#mm > div:nth-child(4) > span.info-label').css('color', '#026796');
+$('#mm > div:nth-child(4) > span.info-text').css('color', '#39393a');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a').css('color', '#026796');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a').css('font-size', '12px');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a').css('opacity', '.7');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a').css('display', 'block');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a').css('margin-top', '12px');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a').css('font-weight', '400');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a').css('margin-bottom', '8px');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a > span.q-icon').css('width', '13px');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a > span.q-icon').css('height', '13px');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a > span.q-icon').css('background', '#026796');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a > span.q-icon').css('color', '#fff');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a > span.q-icon').css('display', 'block');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a > span.q-icon').css('float', 'left');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a > span.q-icon').css('margin-right', '5px');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a > span.q-icon').css('margin-top', '2px');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a > span.q-icon').css('text-align', 'center');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a > span.q-icon').css('font-size', '10px');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a > span.q-icon').css('line-height', '13px');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a > span.q-icon').css('font-weight', '800');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a > span.q-icon').css('border-radius', '50%');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a > span.quick-info-text').css('', '');
 $('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a > span.quick-info-text').css('text-decoration', 'underline');
-$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a > span.quick-info-text').css('text-transform', 'uppercase');
-$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a > span.quick-info-text').css('text-size', '12px');
-$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div:nth-child(11) > div > a > span.quick-info-text').css('font-weight', '600');
-$('#quickInfoShipping > p:nth-child(1)').css('margin-bottom', '8px');
-$('#quickInfoShipping > p:nth-child(2)').css('margin-bottom', '0');
-$('#quickInfoShipping > p:nth-child(3)').css('margin-bottom', '0');
+$('#quickInfoShipping').css('font-size', '13px');
+$('#quickInfoShipping').css('font-weight', '500');
+$('#quickInfoShipping').css('color', '#202020');
+$('#quickInfoShipping > p:nth-child(2)').css('font-weight', '600');
+$('#quickInfoShipping > p:nth-child(2)').css('color', '#026796');
+$('#quickInfoShipping > p:nth-child(3)').css('font-weight', '600');
+$('#quickInfoShipping > p:nth-child(3)').css('color', '#026796');
+$('#quickInfoShipping > p:nth-child(3)').css('margin-bottom', '4px');
+$('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-attributes > div.prescription-details').hide();
