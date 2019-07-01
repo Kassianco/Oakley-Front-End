@@ -70,7 +70,7 @@ $('#quickInfoShipping > p:nth-child(3)').css('font-weight', '600');
 $('#quickInfoShipping > p:nth-child(3)').css('color', '#026796');
 $('#quickInfoShipping > p:nth-child(3)').css('margin-bottom', '4px');
 
-
+<script>
 $('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-cart-wrapper > div.cleaner.lens-options:not(.hidden)').replaceWith('<div class="cleaner lens-options replacement-0-11"><div><h4 class="title options-single">LENS OPTIONS:</h4><span class="lens-options-single-label"> Single Vision</span><div><input type="radio" name="lens-single_04-365" id="lens-single04-365" checked="" value="04-365" class="hidden" data-position="0-11" data-elem-id="X_Pdp_Prod_RoxLensTypeSelect" aria-label="select single lens code 04-365" tabindex="263"><span class="lens-options-single">Progressive lenses are not available for this product</span></div><div id="mm"><h4 class="title">PRESCRIPTION DETAILS</h4><div class="info-row"><span class="info-label">Sphere:</span><span class="info-text"> 2.0 to -5.0</span></div><div class="info-row"><span class="info-label">Cylinder:</span><span class="info-text"> 3.0 to -3.0</span></div><div class="info-row"><span class="info-label">Axes: </span><span class="info-text">any</span></div></div><a href="javascript:void(0)" onclick="showQuickInfoShipping()"><span class="q-icon">!</span><span class="quick-info-text">How to provide your prescription</span></a><div id="quickInfoShipping" class="quick-info-shipping">To process your order we will need a copy of your prescription after you have checked out.<p>You can choose between <strong>2 options:</strong></p><p class="margin-botton-prescription-option"><span>»</span> Upload it</p><p class="margin-botton-prescription-option"><span>»</span> E-mail it</p></div></div></div>');
 $('body').prepend('<style>.quick-info-shipping {overflow: hidden;max-height: 0; transition: max-height .5s ease-out;}.quick-info-shipping-expanded {max-height: 667px; transition: max-height .5s ease-in;}</style>');
 $('body').append('<script>var quickInfoShipping = document.getElementById("quickInfoShipping");function showQuickInfoShipping() { quickInfoShipping.classList.toggle("quick-info-shipping-expanded");}</script>');
@@ -121,3 +121,4 @@ $('#quickInfoShipping > p:nth-child(3)').css('font-weight', '600');
 $('#quickInfoShipping > p:nth-child(3)').css('color', '#026796');
 $('#quickInfoShipping > p:nth-child(3)').css('margin-bottom', '4px');
 $('#pdhero > div.wrapper > form > div.flex-container > div.pdhero-sidebar-bottom > div.product-attributes > div.prescription-details').hide();
+</script>
